@@ -22,11 +22,11 @@ else
     date=$(date "+%Y-%m-%dT%H:%M:%S%:z")
     cat << EOF > /tmp/"$note_name"
 ---
-created: "$date"
-modified: "$date"
+created: ${dat}"
+modified: ${date}
 ---
 
-# "$note_title"
+# ${note_title}
 EOF
     vim /tmp/"$note_name"
     sed "3s|.*|modified: $(date "+%Y-%m-%dT%H:%M:%S%:z")|g" /tmp/"$note_name"
