@@ -4,7 +4,7 @@ note_title="$1"
 note_name=""$note_title".md"
 notes_dir=""$HOME"/gitjournal"
 
-if [ -z "$note_name" ] ; then
+if [ -z "$note_title" ] ; then
     echo "Please provide note name."
     exit 1
 fi
