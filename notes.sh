@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# TODO single word switches to create, delete, and search notes
+# TODO tab completion of all note filenames
 note_title="$1"
 note_name=""$note_title".md"
 notes_dir=""$HOME"/gitjournal"
@@ -22,7 +24,7 @@ else
     date=$(date "+%Y-%m-%dT%H:%M:%S%:z")
     cat << EOF > /tmp/"$note_name"
 ---
-created: ${dat}"
+created: ${date}
 modified: ${date}
 ---
 
