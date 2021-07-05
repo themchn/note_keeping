@@ -9,4 +9,4 @@ vim is currently hardcoded as the editor but that can be changed easily enough.
 sync_notes.sh pulls and pushes changes to git.
 This was designed to be used in conjunction with incrond for automatic syncing to git.
 
-This was written with gitjournal for android in mind https://gitjournal.io/ and note creation follows gitjournals template for seamless transition.
+This was written with gitjournal for android in mind https://gitjournal.io/ and note creation follows gitjournal's template for seamless transition.
