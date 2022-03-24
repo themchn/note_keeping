@@ -38,7 +38,7 @@ if [ -f "$note_name" ] ; then
 		vim +/"$fzf_query" "$note_name"
 	fi
     new_mod_time=$(stat -c %y "$note_name")
-    if [ old_mod_time != new_mod_time ] ; then
+    if [ "$old_mod_time" != "$new_mod_time" ] ; then
         sed -i "3s|.*|modified: $(date "+%Y-%m-%dT%H:%M:%S%:z")|g" "$note_name"
     fi
 else
