@@ -5,7 +5,7 @@ notedir=""$HOME"/gitjournal"
 
 # Check if sync process is currently running via lockfile
 state=`cat /run/lock/notesync`
-if [ "$state" -eq 1 ] ; then
+if [[ "$state" = "1" ]] ; then
     exit 1
 else
     #Lock the file
