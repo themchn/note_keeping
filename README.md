@@ -1,6 +1,7 @@
 # note_keeping
 Scripts for creation and syncronizatin of notes.
 Currently REQUIRES fzf and ripgrep.
+RECOMMENDED to have is incrond
 
 notes.sh takes no arguments for creation/searching/reading notes but accepts delete as $1 for deleting note files.
 Be sure to set the $notes_dir default if you aren't using $HOME/gitjournal
