@@ -1,13 +1,9 @@
 # note_keeping
-Scripts for creation and syncronizatin of notes.
-Currently REQUIRES fzf and ripgrep.
-RECOMMENDED to have is incrond
+Wrapper script for fzf, ripgrep, and vim for the searching, viewing, editing, and creating notes.
+Currently REQUIRES fzf, ripgrep, and vim.
 
 notes.sh takes no arguments for creation/searching/reading notes but accepts delete as $1 for deleting note files.
-Be sure to set the $notes_dir default if you aren't using $HOME/gitjournal
-vim is currently hardcoded as the editor but that can be changed easily enough.
+Be sure to set the $notes_dir default if you are not using this with Nextcloud's Notes app in default direction configuration.
+vim is currently hardcoded as the editor but the this could be changed relatively easily.
 
-sync_notes.sh pulls and pushes changes to git.
-This was designed to be used in conjunction with incrond for automatic syncing to git.
-
-This was written with gitjournal for android in mind https://gitjournal.io/ and note creation follows gitjournal's template for seamless transition.
+This repo no longer has anything to handling syncing. I've moved from gitjournal to nextcloud notes.
